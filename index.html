@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUR WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div  id="header">
+        <div class="container">
+            <nav>
+                <img src="logo3.png" class="logo">
+                <!-- <h1>INORA</h1> -->
+                <ul class="links">
+                    <li  id="rashi1"><a href="/index.html" target="_main">HOME</a></li>
+                    <li  id="rashi2"><a href="/about.html" target="_main">ABOUT US</a></li>
+                    <li  id="rashi3"><a href="/products.html" target="_main">PRODUCTS</a></li>
+                    <li  id="rashi4"><a href="/contact.html" target="_main" >CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>INORA FRAGRANCES </p>
+                <H1> THE SCENT YOU CANT GET ENOUGH OF! </H1>
+            </div>
+        </div>
+    </div>
+<!-- ABOUT US OR WOT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="black.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <p>INORA is a perfume brand that blends timeless elegance with global influence. 
+                        Inspired by Kolkata, each fragrance combines notes like Mediterranean citrus, 
+                        Middle Eastern amber, Madagascar vanilla, and Indian jasmine, creating a unique 
+                        sensory experience. More than just a scent, INORA evokes emotions and memories, 
+                        offering a subtle yet lasting impression of sophistication and allure.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('story')">STORY</p>
+                        <p class="tab-links" onclick="opentab('miss')">MISSION</p>
+                        <p class="tab-links" onclick="opentab('found')">FOUNDER</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="story">
+                        <p>INORA began as a shared dream between three friends, united by a passion for fragrance and an admiration for the rich culture of Kolkata. Inspired by the city’s timeless elegance, we wanted to create something that transcended the ordinary—a fragrance that told a story, evoked emotions, and left a lasting impression.</p>
+                        <p>With this vision in mind, we set out to craft perfumes that weren’t just scents, but experiences. Each bottle of INORA reflects our journey, blending influences from across the world</p>
+                    </div>
+                    <div class="tab-contents" id="miss">
+                        <p>At INORA, our mission is to craft fragrances that go beyond the ordinary. We aim to create scents that tell stories, evoke emotions, and capture moments in time. Each bottle is a reflection of our commitment to quality, artistry, and luxury. By blending influences from around the world, we offer a unique sensory experience that transcends tradition and embraces the essence of elegance. We strive to empower those who wear INORA to embrace their individuality, leaving a lasting impression that resonates with power, mystique, and allure.</p>
+                    </div>
+                    <div class="tab-contents" id="found">
+                        <p>INORA began as a shared dream between three friends, united by a passion for fragrance and an admiration for the rich culture of Kolkata. Inspired by the city’s timeless elegance, we wanted to create something that transcended the ordinary—a fragrance that told a story, evoked emotions, and left a lasting impression.
+                        With this vision in mind, we set out to craft perfumes that weren’t just scents, but experiences. Each bottle of INORA reflects our journey, blending influences from across the world</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCTS OR WOT-->
+    <div id="products">
+
+    </div>
+
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>

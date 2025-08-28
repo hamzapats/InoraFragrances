@@ -1,0 +1,201 @@
+/* ONLY ABOUT US */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Body */
+body{
+  background: grey;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+#para1{
+  font-size: 4rem;
+  color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* HEADER LINKS START */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 3%;
+}
+.logo{
+    width: 300px;
+    background-size: contain;
+    margin-left: -100px;
+}
+.links{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  padding: bottom 1rem;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none; 
+  margin: 10px 20px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.413);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+/* HEADER LINKS END */
+
+
+
+/* Hero Banner */
+.hero {
+  background-image: url(IMG_0377.JPG);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: grey;
+  padding: 2rem;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Section Layout */
+
+.section {
+  padding: 4rem 5%;
+  background: grey;
+}
+.section.alt {
+  background: grey;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.text {
+  flex: 1;
+  min-width: 300px;
+}
+.text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.text p, .text ul {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+.text ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 30px;
+}
+.text ul li {
+  margin-bottom: 0.5rem;
+}
+.image {
+  flex: 1;
+  min-width: 300px;
+}
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact */
+.contact {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 2rem;
+}
+.contact h2 {
+  margin-bottom: 1rem;
+}
+.contact a {
+  color: #4dcfff;
+  text-decoration: none;
+}
+
+.whatsup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:9px;
+    /* margin-top: 25px; */
+}
+.insta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:9px;
+    margin-top: 5px;
+}
+
+
+/* Footer */
+.footer {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text, .image {
+    flex: unset;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
