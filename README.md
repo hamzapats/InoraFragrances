@@ -1,4 +1,4 @@
-#INORA FRAGRANCES
+**INORA FRAGRANCES**
 
 Inora is a premium perfume brand, and this website is built to highlight its unique fragrance collection. 
 The platform features a sleek product grid, clickable product cards for detailed views, and a clean footer contact section. 
